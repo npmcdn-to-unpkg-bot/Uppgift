@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no">
+
+    <title>Produktlista</title>
+
+    <link href="lib/reset.css" rel="stylesheet" />
+
+    <link href="css/compiled/gobal.css" rel="stylesheet" />
+    <link href="css/compiled/tablet.css" rel="stylesheet" media="screen and (max-width: 800px)" />
+    <link href="css/compiled/mobile.css" rel="stylesheet" media="screen and (max-width: 500px)" />
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+
+    <script type="application/javascript" src="lib/jquery-3.0.0.min.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script type="application/javascript" src="https://npmcdn.com/isotope-layout@3.0.1/dist/isotope.pkgd.min.js"></script>
+
+    <script type="application/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <div id="statusbar">
+
+            <div id="statusbar-inner">
+
+                <p id="like-count">Inga gillade produkter</p>
+
+            </div>
+
+        </div>
+        <!-- /statusbar -->
+
+        <div id="grid">
+
+            <!-- två tomma items för att komma runt Masonry bugg -->
+            <div class="item bg-border">
+            </div>
+
+            <div class="item bg-border">
+            </div>
+
+            <!-- den "item" vi använder som mall för alla andra items -->
+            <div id="item-master" class="item" style="display:none">
+
+                <img class="product-img" src="images/BalloonFightnesboxart.jpg" />
+
+                <p class="product-description">Beskrivning</p>
+                <p class="product-price">pris</p>
+
+                <div class="divider">
+                </div>
+
+                <div class="button like-button">
+
+                    <img src="images/heart.png" alt="gilla" />
+                    <p>Gilla</p>
+                    
+                </div>
+
+            </div>
+            <!-- /item -->
+
+        </div>
+        <!-- /grid -->
+
+    </div>
+    <!-- /wrap -->
+
+</body>
+
+</html>
